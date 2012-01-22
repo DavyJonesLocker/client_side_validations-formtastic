@@ -17,6 +17,7 @@ Gem::Specification.new do |gem|
   gem.add_dependency 'formtastic', '~> 2.0.0'
 
   gem.add_development_dependency 'actionpack', '~> 3.2.0'
+  gem.add_development_dependency 'railties',   '~> 3.2.0'
 
   # For QUnit testing
   gem.add_development_dependency 'sinatra', '~> 1.0'
