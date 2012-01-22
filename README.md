@@ -11,7 +11,7 @@ In your Gemfile add the following:
 ```ruby
 gem 'formtastic'
 gem 'client_side_validations'
-gem 'client_side_validations-formtastic', :require => 'client_side_validations/formtastic'
+gem 'client_side_validations-formtastic'
 ```
 
 Order matters here. `Formtastic` and `ClientSideValidations` need to be
