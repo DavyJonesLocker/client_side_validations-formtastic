@@ -2,7 +2,7 @@
 
 [![Build Status](http://travis-ci.org/dockyard/client_side_validations-formtastic.png)](http://travis-ci.org/dockyard/client_side_validations-formtastic)
 
-Formtastic plugin for [ClientSideValidations](https://github.com/bcardarella/client_side_validations)
+[Formtastic](https://github.com/justinfrench/formtastic) plugin for [ClientSideValidations](https://github.com/bcardarella/client_side_validations)
 
 ## Installation ##
 
