@@ -2,11 +2,6 @@ require 'sinatra'
 require 'json'
 require 'ruby-debug'
 
-# def rails_validations_js_file
-  # path_to_file = "#{File.expand_path('../', $:.grep(/client_side_validations-\d/).first)}/vendor/assets/javascripts/rails.validations.js"
-  # File.open(path_to_file)
-# end
-
 def rails_validations_path
   File.expand_path('../', $:.grep(/client_side_validations-\d/).first)
 end
@@ -53,6 +48,8 @@ end
 use AssetPath, :urls => ['/vendor/assets/javascripts/'], :root => rails_validations_path
 use AssetPath, :urls => ['/vendor/assets/javascripts/'], :root => File.expand_path('../..', settings.root)
 
+JQUERY_VERSIONS = %w[ 1.6 1.6.1 1.6.2 1.6.3 1.6.4 1.7 1.7.1 ].freeze
+
 helpers do
   def jquery_link version
     if params[:version] == version
@@ -87,10 +84,14 @@ helpers do
     src = "/test/#{src}.js" unless src.index('/')
     %(<script src='#{src}' type='text/javascript'></script>)
   end
+
+  def jquery_versions
+    JQUERY_VERSIONS
+  end  
 end
 
 get '/' do
-  params[:version] ||= '1.4.4'
+  params[:version] ||= '1.7.1'
   erb :index
 end
 
