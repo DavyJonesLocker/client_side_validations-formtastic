@@ -8,9 +8,7 @@ Gem::Specification.new do |gem|
   gem.summary       = %q{Formtastic Plugin for ClientSideValidations}
   gem.homepage      = 'https://github.com/dockyard/client_side_validations-formtastic'
 
-  gem.executables   = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
   gem.files         = `git ls-files -- {lib/*,vendor/*,*.gemspec}`.split("\n")
-  gem.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")
   gem.name          = 'client_side_validations-formtastic'
   gem.require_paths = ['lib']
   gem.version       = ClientSideValidations::Formtastic::VERSION
