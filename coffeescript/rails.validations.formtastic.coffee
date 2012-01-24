@@ -15,11 +15,11 @@ ClientSideValidations.formBuilders['Formtastic::FormBuilder'] =
       wrapper.addClass('error')
       wrapper.append(errorElement)
     else
-      element.parent().find('p.' + settings.inline_error_class).text(message)
+      element.parent().find("p.#{settings.inline_error_class}").text(message)
 
   remove: (element, settings) ->
     wrapper = element.closest('li.error')
-    errorElement = wrapper.find('p.' + settings.inline_error_class)
+    errorElement = wrapper.find("p.#{settings.inline_error_class}")
     wrapper.removeClass('error')
     errorElement.remove()
 

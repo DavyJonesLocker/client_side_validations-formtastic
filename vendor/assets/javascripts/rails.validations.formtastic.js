@@ -22,13 +22,13 @@
         wrapper.addClass('error');
         return wrapper.append(errorElement);
       } else {
-        return element.parent().find('p.' + settings.inline_error_class).text(message);
+        return element.parent().find("p." + settings.inline_error_class).text(message);
       }
     },
     remove: function(element, settings) {
       var errorElement, wrapper;
       wrapper = element.closest('li.error');
-      errorElement = wrapper.find('p.' + settings.inline_error_class);
+      errorElement = wrapper.find("p." + settings.inline_error_class);
       wrapper.removeClass('error');
       return errorElement.remove();
     }
