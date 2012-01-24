@@ -4,11 +4,32 @@ require 'client_side_validations/formtastic/version'
 require 'coffee_script'
 require 'erb'
 
-root_path = File.expand_path('../..', __FILE__)
-file_name = 'rails.validations.formtastic'
+module ClientSideValidations
+  class Processor
+    def self.run
+      write_file
+    end
 
-template = ERB.new(File.open(File.join(root_path, 'coffeescript', "#{file_name}.coffee")).read)
-javascript = CoffeeScript.compile(template.result(binding))
-file = File.new(File.join(root_path, "vendor/assets/javascripts/#{file_name}.js"), 'w')
-file << javascript
-file.close
+    def self.root_path
+      File.expand_path('../..', __FILE__)
+    end
+
+    def self.file_name
+      'rails.validations.formtastic'
+    end
+
+    def self.template
+      ERB.new(File.open(File.join(root_path, 'coffeescript', "#{file_name}.coffee")).read)
+    end
+
+    def self.compiled_coffeescript
+      CoffeeScript.compile(template.result(binding))
+    end
+
+    def self.write_file
+      file = File.new(File.join(root_path, "vendor/assets/javascripts/#{file_name}.js"), 'w')
+      file << compiled_coffeescript
+      file.close
+    end
+  end
+end
