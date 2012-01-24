@@ -16,8 +16,8 @@ Gem::Specification.new do |gem|
   gem.add_dependency 'client_side_validations', '~> 3.2.0.beta.1'
   gem.add_dependency 'formtastic', '~> 2.0.0'
 
-  gem.add_development_dependency 'actionpack', '~> 3.2.0'
-  gem.add_development_dependency 'railties',   '~> 3.2.0'
+  gem.add_development_dependency 'rails', '~> 3.2.0'
+  gem.add_development_dependency 'mocha'
 
   # For QUnit testing
   gem.add_development_dependency 'sinatra', '~> 1.0'
