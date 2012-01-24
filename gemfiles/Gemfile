@@ -5,4 +5,5 @@ gem 'formtastic', '~> 2.0.0'
 gem 'client_side_validations', '~> 3.2.0.beta.1'
 gem 'mocha'
 gem 'rake'
+gem 'coffee-script'
 
