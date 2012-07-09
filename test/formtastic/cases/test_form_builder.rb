@@ -6,6 +6,7 @@ class ClientSideValidations::Formtastic::FormBuilderTest < Test::Unit::TestCase
       :type => 'Formtastic::FormBuilder',
       :inline_error_class => 'inline-errors'
     }
-    assert_equal expected, Formtastic::FormBuilder.client_side_form_settings(nil, nil)
+    builder = Formtastic::FormBuilder.new(:user, nil, {}, {}, Proc.new {})
+    assert_equal expected, builder.client_side_form_settings(nil, nil)
   end
 end
