@@ -1,5 +1,5 @@
 module ClientSideValidations
   module Formtastic
-    VERSION = '2.0.0.beta.5'
+    VERSION = '2.2.0.beta.1'
   end
 end
