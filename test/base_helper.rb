@@ -11,5 +11,3 @@ if RUBY_VERSION >= '1.9.3'
   rescue LoadError
   end
 end
-
-module ClientSideValidations; end
