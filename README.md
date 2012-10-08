@@ -1,6 +1,6 @@
 # ClientSideValidations-Formtastic #
 
-[![Build Status](http://travis-ci.org/dockyard/client_side_validations-formtastic.png)](http://travis-ci.org/dockyard/client_side_validations-formtastic)
+[![Build Status](https://secure.travis-ci.org/dockyard/client_side_validations-formtastic.png?branch=2-0-stable)](http://travis-ci.org/dockyard/client_side_validations-formtastic)
 
 [Formtastic](https://github.com/justinfrench/formtastic) plugin for [ClientSideValidations](https://github.com/bcardarella/client_side_validations)
 
