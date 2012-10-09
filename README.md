@@ -1,6 +1,8 @@
 # ClientSideValidations-Formtastic #
 
 [![Build Status](https://secure.travis-ci.org/dockyard/client_side_validations-formtastic.png?branch=2-0-stable)](http://travis-ci.org/dockyard/client_side_validations-formtastic)
+[![Dependency Status](https://gemnasium.com/dockyard/client_side_validations-formtastic.png?travis)](https://gemnasium.com/dockyard/client_side_validations-formtastic)
+[![Code Climate](https://codeclimate.com/badge.png)](https://codeclimate.com/github/dockyard/client_side_validations-formtastic)
 
 [Formtastic](https://github.com/justinfrench/formtastic) plugin for [ClientSideValidations](https://github.com/bcardarella/client_side_validations)
 
@@ -17,7 +19,7 @@ gem 'client_side_validations-formtastic'
 Order matters here. `Formtastic` and `ClientSideValidations` need to be
 required **before** `ClientSideValidations-Formtastic`.
 
-[Follow the remaining installation instructions for ClientSideValidations](https://github.com/bcardarella/client_side_validations/README.markdown)
+[Follow the remaining installation instructions for ClientSideValidations](https://github.com/bcardarella/client_side_validations/tree/3-2-stable/README.md)
 
 Add the following line to `app/assets/javascripts/application.js`
 
@@ -61,26 +63,22 @@ Per-input options are done with `:validate`
 
 [Brian Cardarella](http://twitter.com/bcardarella)
 
+[We are very thankful for the many contributors](https://github.com/dockyard/client_side_validations-formtastic/graphs/contributors)
+
 ## Versioning ##
 
 This gem follows [Semantic Versioning](http://semver.org)
 
-Major and minor version numbers will follow `Formtastic`'s major and
+Major and minor version numbers will follow `Rails`'s major and
 minor version numbers. For example,
-`client_side_validations-formtastic-2.0.0` will be compatible with
+`client_side_validations-formtastic-2.0.0` will be compatible up to 
 `~> formtastic-2.0.0`
 
 ## Want to help? ##
 
-Stable branches are created based upon each minor version. Please make
-pull requests to specific branches rather than master.
-
-Please make sure you include tests!
-
-Unles Rails drops support for Ruby 1.8.7 we will continue to use the
-hash-rocket syntax. Please respect this.
-
-Don't use tabs to indent, two spaces are the standard.
+Please do! We are always looking to improve this gem. Please see our
+[Contribution Guidelines](https://github.com/dockyard/client_side_validations-formtastic/blob/master/CONTRIBUTING.md)
+on how to properly submit issues and pull requests.
 
 ## Legal ##
 
