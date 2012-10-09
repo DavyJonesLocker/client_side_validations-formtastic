@@ -1,6 +1,6 @@
 # ClientSideValidations-Formtastic #
 
-[![Build Status](https://secure.travis-ci.org/dockyard/client_side_validations-formtastic.png?branch=2-2-stable)](http://travis-ci.org/dockyard/client_side_validations-formtastic)
+[![Build Status](https://secure.travis-ci.org/dockyard/client_side_validations-formtastic.png?branch=master)](http://travis-ci.org/dockyard/client_side_validations-formtastic)
 [![Dependency Status](https://gemnasium.com/dockyard/client_side_validations-formtastic.png?travis)](https://gemnasium.com/dockyard/client_side_validations-formtastic)
 [![Code Climate](https://codeclimate.com/badge.png)](https://codeclimate.com/github/dockyard/client_side_validations-formtastic)
 
