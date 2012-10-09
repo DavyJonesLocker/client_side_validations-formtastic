@@ -4,7 +4,7 @@ module('Validate Formtastic', {
       type: 'Formtastic::FormBuilder',
       inline_error_class: 'inline-errors',
       validators: {
-        "user[name]":{"presence":{"message": "must be present"}, "format":{"message":"is invalid","with":/\d+/}}
+        "user[name]":{"presence":[{"message": "must be present"}], "format":[{"message":"is invalid","with":/\d+/}]}
       }
     }
 
@@ -20,7 +20,6 @@ module('Validate Formtastic', {
           .append($('<input />', {
             name: 'user[name]',
             id: 'user_name',
-            'data-validate': 'true',
             type: 'text'
           }))
           .append($('<label for="user_name">Name</label>'));
