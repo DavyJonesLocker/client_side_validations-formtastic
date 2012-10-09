@@ -13,7 +13,7 @@ Gem::Specification.new do |gem|
   gem.require_paths = ['lib']
   gem.version       = ClientSideValidations::Formtastic::VERSION
 
-  gem.add_dependency 'client_side_validations', '~> 3.2.0.rc.2'
+  gem.add_dependency 'client_side_validations', '~> 3.2.0'
   gem.add_dependency 'formtastic', '~> 2.2.0'
 
   gem.add_development_dependency 'rails', '~> 3.2.0'
