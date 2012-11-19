@@ -1,6 +1,6 @@
 
 /*
-  Client Side Validations - Formtastic - v2.2.0.rc.2
+  Client Side Validations - Formtastic - v2.2.0
   https://github.com/dockyard/client_side_validations-formtastic
 
   Copyright (c) 2012 DockYard, LLC
